@@ -42,7 +42,6 @@ app.post('/login', (req, res) => {
 
         res.json({
             ok: true,
-            semilla: process.env.SEED,
             usuario: usuarioDB,
             token
         });
