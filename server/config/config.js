@@ -17,7 +17,8 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // 60 minutos
 // 24 horas
 // 30 días
-process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+// 60 * 60 * 24 * 30 = 1 mes
+process.env.CADUCIDAD_TOKEN = '48h';
 
 // =======================================
 // SEED de autenticación
@@ -43,4 +44,5 @@ process.env.URLDB = urlDB;
 // =======================================
 // Google Client ID
 // =======================================
+// Pendiente configurar el CLIENT_IDen Heroku, en caso de que cambie...
 process.env.CLIENT_ID = process.env.CLIENT_ID || '164952571542-jj7qg521f7jf94irdjnrgvmdjsa3csml.apps.googleusercontent.com';
